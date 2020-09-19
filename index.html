@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="display">
+            <h2>Calculator</h2>
+        </div>
+        <div class="output">
+            <p id="output-1" class="outputs"></p>
+            <p id="output-2" class="outputs"></p>
+        </div>
+        <div class="input">
+            <div class="numbers">
+                <div>
+                    <button class="basics" id="erase" onclick="deleteFunction(this)">C</button>
+                    <button class="basics" id="backspace" onclick="deleteFunction(this)">CE</button>
+                    <button class="basics" id="modulus" name="modulus" onclick="operationFunction(this)">%</button>
+                </div>
+                <div>
+                    <button id="no7" class="number" onclick="numberFunction(this)">7</button>
+                    <button id="no8" class="number" onclick="numberFunction(this)">8</button>
+                    <button id="no9" class="number" onclick="numberFunction(this)">9</button>
+                </div>
+                <div>
+                    <button id="no4" class="number" onclick="numberFunction(this)">4</button>
+                    <button id="no5" class="number" onclick="numberFunction(this)">5</button>
+                    <button id="no6" class="number" onclick="numberFunction(this)">6</button>
+                </div>
+                <div>
+                    <button id="no1" class="number" onclick="numberFunction(this)">1</button>
+                    <button id="no2" class="number" onclick="numberFunction(this)">2</button>
+                    <button id="no3" class="number" onclick="numberFunction(this)">3</button>
+                </div>
+                <button id="no0" class="number" onclick="numberFunction(this)">0</button>
+            </div>
+            <div class="operation">
+                <div><button onclick="operationFunction(this)" class="operations" id="divide" name="divide">&divide;</button></div>
+                <div><button onclick="operationFunction(this)" class="operations" id="multiply" name="multiply">&times;</button></div>
+                <div><button onclick="operationFunction(this)" class="operations" id="subtract" name="subtract">&minus;</button></div>
+                <div><button onclick="operationFunction(this)" class="operations" id="add" name="add">&plus;</button></div>
+                <div><button onclick="operationFunction(this)" class="operations" id="equal" name="equals">&equals;</button></div>
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+}
+
+body::before{
+    content: "";
+    background: url('../design.jpg') no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.calculator{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+    width: min-content;
+}
+
+.display{
+    text-align: center;
+}
+
+.outputs{
+    height: 50%;
+    text-align: right;
+}
+.display h2{
+    font-size: 30px;
+    color: yellowgreen;
+    font-family: 'Courier New', Courier, monospace;
+    border-bottom: 1px solid lightgray;
+}
+
+.output{
+    height: 100px;
+    width: 299px;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.basics{
+    border: 0;
+    border-radius: 50%;
+    padding: 13px 17px;
+    margin: 10px 14px;
+    font-size: large;
+}
+
+.basics:hover{
+    background-color: lightgray;
+}
+.operations{
+    border: 0;
+    border-radius: 50%;
+    padding: 13px 17px;
+    margin: 0 14px;
+    font-size: large;
+    display: block;
+    
+}
+.numbers{
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.number{
+    border: 0;
+    border-radius: 50%;
+    padding: 13px 17px;
+    margin: 10px 14px;
+    font-size: large;
+    background-color: transparent;
+    
+}
+.numbers div{
+    font-size: 0;
+}
+.operation{
+    display: inline-block;
+    box-sizing: border-box;
+    /* position: absolute;
+    right: 0;
+    bottom: 0; */
+    text-align: center;
+}
+
+.operation div{
+    padding: 10px 0;
+}
+
+#modulus{
+    font-size: 14px;
+    padding: 15px 16px;
+}
+
+#backspace{
+    padding: 14px 13px;
+    font-size: 15px;
+}
+
+
+.number:hover{
+    background-color: lightgrey;
+}
+.number:active{
+    background-color: blue;
+    border: 0;
+}
